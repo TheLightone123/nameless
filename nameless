@@ -446,7 +446,7 @@ local Toggle = Section:AddToggle("Bubble", {flag = "Toggle_Flag", default = fals
                     Bubble.Parent = Workspace
                     Bubble.Size = Vector3.new(20, 20, 20)
                     Bubble.CastShadow = true
-                    Bubble.CanCollide = false
+                    Bubble.CanCollide = true
                     Bubble.Anchored = true
                     Bubble.Shape = Enum.PartType.Ball
                     Bubble.Color = Color3.fromRGB(17, 17, 17)
@@ -7188,17 +7188,17 @@ game.Workspace.resources['RemoteEvent']:FireServer("wearShirt","http://www.roblo
 end
 })
 Tab:AddButton({
-	Name = "Pilot Clothes",
+	Name = "TheLightoneSkin",
 	Callback = function()  
 game.Workspace.resources['RemoteEvent']:FireServer("wearShirt","http://www.roblox.com/asset/?id=236886923")
-	game.Workspace.resources['RemoteEvent']:FireServer("wearPants","http://www.roblox.com/asset/?id=454772491")
+	game.Workspace.resources['RemoteEvent']:FireServer("wearPants","https://www.roblox.com/catalog/11189383451/Crusader-Light-Warrior-Armour-KNIGHT-Bottom")
 end
 })
 Tab:AddButton({
-	Name = "FBI Skin",
+	Name = "FBI",
 	Callback = function() 
 game.Workspace.resources.RemoteFunction:InvokeServer("giveRiotShield",Workspace.RiotShield)
-game.Workspace.resources['RemoteEvent']:FireServer("wearShirt","http://www.roblox.com/asset/?id=1931228554")
+game.Workspace.resources['RemoteEvent']:FireServer("wearShirt","https://www.roblox.com/catalog/11189380879/Crusader-Light-Warrior-Armour-KNIGHT-Top")
 	game.Workspace.resources['RemoteEvent']:FireServer("wearPants","http://www.roblox.com/asset/?id=1931229502")
 end
 })
@@ -7640,7 +7640,7 @@ local lib = require(game:GetService("Workspace").upsilonLibrary)
 Bubble.Parent = Workspace
 		Bubble.Size = Vector3.new(9999, 180, 9999)
 		Bubble.CastShadow = false
-		Bubble.CanCollide = false
+		Bubble.CanCollide = true
 		Bubble.Anchored = true
      Bubble.BrickColor = BrickColor.new("26")
 		Bubble.Material = Enum.Material.Neon
@@ -7685,7 +7685,7 @@ local lib = require(game:GetService("Workspace").upsilonLibrary)	game.Workspace.
 		Bubble.Parent = Workspace[game.Players.LocalPlayer.Name]["Secret Agent Shades"]
 		Bubble.Size = Vector3.new(4, 4, 4)
 		Bubble.CastShadow = false
-		Bubble.CanCollide = false
+		Bubble.CanCollide = True
 		Bubble.Anchored = true
 		Bubble.Transparency = 0
      Bubble.Material = Enum.Material.WoodPlanks
