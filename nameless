@@ -7187,13 +7187,7 @@ game.Workspace.resources['RemoteEvent']:FireServer("wearShirt","http://www.roblo
 	game.Workspace.resources['RemoteEvent']:FireServer("wearPants","http://www.roblox.com/asset/?id=686769710")
 end
 })
-Tab:AddButton({
-	Name = "TheLightoneSkin",
-	Callback = function()  
-game.Workspace.resources['RemoteEvent']:FireServer("wearShirt","http://www.roblox.com/asset/?id=236886923")
-	game.Workspace.resources['RemoteEvent']:FireServer("wearPants","https://www.roblox.com/catalog/11189383451/Crusader-Light-Warrior-Armour-KNIGHT-Bottom")
-end
-})
+
 Tab:AddButton({
 	Name = "FBI",
 	Callback = function() 
